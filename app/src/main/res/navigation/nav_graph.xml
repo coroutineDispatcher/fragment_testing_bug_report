@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/testableFragment">
+
+    <fragment
+        android:id="@+id/testableFragment"
+        android:name="com.stavro_xhardha.testdemoapp.StartDestinationFragment"
+        android:label="fragment_testable"
+        tools:layout="@layout/fragment_testable" >
+        <action
+            android:id="@+id/action_testableFragment_to_destinationFragment"
+            app:destination="@id/destinationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/destinationFragment"
+        android:name="com.stavro_xhardha.testdemoapp.DestinationFragment"
+        android:label="fragment_destination"
+        tools:layout="@layout/fragment_destination" />
+</navigation>
